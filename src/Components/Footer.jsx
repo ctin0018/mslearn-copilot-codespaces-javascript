@@ -34,7 +34,9 @@ const Footer = (props) => {
     instagram,
     linkedIn,
     medium,
-    name,
+    firstname,
+    middlename,
+    lastname,
     primaryColor,
     twitter,
     youTube,
@@ -114,7 +116,7 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+        Created by {firstname} {middlename} {lastname}
       </p>
     </div>
   );
@@ -131,7 +133,9 @@ Footer.propTypes = {
   instagram: PropTypes.string,
   linkedIn: PropTypes.string,
   medium: PropTypes.string,
-  name: PropTypes.string.isRequired,
+  firstname: PropTypes.string.isRequired,
+  middlename: PropTypes.string.isRequired,
+  lastname: PropTypes.string,
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
